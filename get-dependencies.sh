@@ -13,7 +13,7 @@ echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
-make-aur-package gradle
+make-aur-package --archlinux-pkg gradle
 make-aur-package java-openjfx
 
 # If the application needs to be manually built that has to be done down here
