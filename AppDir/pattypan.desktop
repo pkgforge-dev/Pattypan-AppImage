@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Pattypan
+GenericName=Wikimedia file uploader
+Comment=Tool that simplifies Wikimedia Commons batch file uploading 
+Exec=pattypan
+Icon=pattypan
+Terminal=false
+Categories=Utility;
