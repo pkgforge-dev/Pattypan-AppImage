@@ -20,7 +20,7 @@ quick-sharun \
 	/usr/lib/libXxf86vm.so*      \
 	/usr/lib/libgtk-3.so*
 
-# Additional changes can be done in between here
+rm -f ./AppDir/share/java/gradle/lib/kotlin-compiler-embeddable*
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
