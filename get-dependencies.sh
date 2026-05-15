@@ -7,8 +7,9 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-	gradle \
-	jre17-openjdk
+	gradle        \
+	jre17-openjdk \
+	libxxf86vm
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
@@ -23,7 +24,8 @@ pacman -Rdd --noconfirm jdk25-openjdk || :
 pacman -Rdd --noconfirm jdk26-openjdk || :
 
 # If the application needs to be manually built that has to be done down here
-mkdir -p ./AppDir/bin && cd ./AppDir/bin
+mkdir -p ./AppDir/bin
+cd ./AppDir/bin
 latest_jar=$(wget --retry-connrefused --tries=30 \
 	https://api.github.com/repos/yarl/pattypan/releases -O - \
 	| sed 's/[()",{} ]/\n/g' | grep -o -m 1 "https.*/pattypan-java-.*.jar"

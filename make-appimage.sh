@@ -15,7 +15,8 @@ rm -rf /usr/lib/jvm/java-17-openjdk/man
 # Deploy dependencies
 quick-sharun \
 	./AppDir/bin/* \
-	/usr/lib/jvm/java-17-openjdk/
+	/usr/lib/jvm/java-17-openjdk \
+	/usr/lib/libXxf86vm.so*
 
 # Additional changes can be done in between here
 
