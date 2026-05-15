@@ -8,7 +8,7 @@ echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
 	gradle \
-	jdk17-openjdk
+	jre17-openjdk
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
