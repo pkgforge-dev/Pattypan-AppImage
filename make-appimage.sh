@@ -14,10 +14,10 @@ export PATH="${JAVA_HOME}/bin:${PATH}"
 # Deploy dependencies
 quick-sharun \
 	./AppDir/bin/* \
-	/usr/lib/jvm/java*/bin \
-    /usr/lib/jvm/java*/conf \
-    /usr/lib/jvm/java*/legal \
-    /usr/lib/jvm/java*/lib
+	/usr/lib/jvm/java-26-openjdk/bin \
+    /usr/lib/jvm/java-26-openjdk/conf \
+    /usr/lib/jvm/java-26-openjdk/legal \
+    /usr/lib/jvm/java-26-openjdk/lib
 
 # Additional changes can be done in between here
 
