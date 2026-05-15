@@ -8,6 +8,7 @@ export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=https://raw.githubusercontent.com/yarl/pattypan/refs/heads/master/src/pattypan/resources/logo.png
+export DEPLOY_OPENGL=1
 
 # there is a broken symlink in the java dir that prevents deploying this correctly
 rm -rf /usr/lib/jvm/java-17-openjdk/man
