@@ -20,7 +20,7 @@ quick-sharun \
 	/usr/lib/libXxf86vm.so*      \
 	/usr/lib/libgtk-3.so*
 
-rm -f ./AppDir/share/java/gradle/lib/kotlin-compiler-embeddable*
+find ./AppDir/share/java/gradle -type f -name 'kotlin*' -delete
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
