@@ -17,7 +17,8 @@ rm -rf /usr/lib/jvm/java-17-openjdk/man
 quick-sharun \
 	./AppDir/bin/* \
 	/usr/lib/jvm/java-17-openjdk \
-	/usr/lib/libXxf86vm.so*
+	/usr/lib/libXxf86vm.so*      \
+	/usr/lib/libgtk-3.so*
 
 # Additional changes can be done in between here
 
