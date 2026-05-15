@@ -6,7 +6,9 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm jre-openjdk
+pacman -Syu --noconfirm \
+	gradle \
+	jdk17-openjdk
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
@@ -16,8 +18,7 @@ get-debloated-pkgs --add-common --prefer-nano
 make-aur-package java-openjfx
 
 # If the application needs to be manually built that has to be done down here
-mkdir -p ./AppDir/bin
-cd ./AppDir/bin
+mkdir -p ./AppDir/bin && cd ./AppDir/bin
 latest_jar=$(wget --retry-connrefused --tries=30 \
 	https://api.github.com/repos/yarl/pattypan/releases -O - \
 	| sed 's/[()",{} ]/\n/g' | grep -o -m 1 "https.*/pattypan-java-.*.jar"
