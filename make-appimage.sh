@@ -8,8 +8,6 @@ export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=https://github.com/yarl/pattypan/blob/master/src/pattypan/resources/logo.png
-#export JAVA_HOME="/usr/lib/jvm/java-26-openjdk"
-#export PATH="${JAVA_HOME}/bin:${PATH}"
 
 # Deploy dependencies
 quick-sharun \
