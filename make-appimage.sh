@@ -14,10 +14,10 @@ export ICON=https://github.com/yarl/pattypan/blob/master/src/pattypan/resources/
 # Deploy dependencies
 quick-sharun \
 	./AppDir/bin/* \
-	/usr/lib/jvm/java-21-openjdk/bin \
-    /usr/lib/jvm/java-21-openjdk/conf \
-    /usr/lib/jvm/java-21-openjdk/legal \
-    /usr/lib/jvm/java-21-openjdk/lib
+	/usr/lib/jvm/java-26-openjdk/bin \
+    /usr/lib/jvm/java-26-openjdk/conf \
+    /usr/lib/jvm/java-26-openjdk/legal \
+    /usr/lib/jvm/java-26-openjdk/lib
 
 # Additional changes can be done in between here
 
