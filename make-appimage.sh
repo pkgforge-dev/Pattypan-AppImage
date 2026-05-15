@@ -7,7 +7,7 @@ export ARCH
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
-export ICON=https://github.com/yarl/pattypan/blob/master/src/pattypan/resources/logo.png
+export ICON=https://raw.githubusercontent.com/yarl/pattypan/refs/heads/master/src/pattypan/resources/logo.png
 
 # Deploy dependencies
 quick-sharun \
