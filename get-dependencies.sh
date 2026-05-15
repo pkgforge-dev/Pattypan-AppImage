@@ -17,6 +17,11 @@ get-debloated-pkgs --add-common --prefer-nano
 # Comment this out if you need an AUR package
 make-aur-package java-openjfx
 
+# remove jdk libs and only leave jre
+pacman -Rdd --noconfirm jdk-openjdk   || :
+pacman -Rdd --noconfirm jdk25-openjdk || :
+pacman -Rdd --noconfirm jdk26-openjdk || :
+
 # If the application needs to be manually built that has to be done down here
 mkdir -p ./AppDir/bin && cd ./AppDir/bin
 latest_jar=$(wget --retry-connrefused --tries=30 \
